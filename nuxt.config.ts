@@ -17,7 +17,7 @@ const modules = [
 export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
   modules,
-  css: ["@/assets/styles/fonts.css", "@/assets/styles/tailwind.css"],
+  css: ["@/assets/css/fonts.css", "@/assets/css/tailwind.css"],
   shadcn: {
     /**
      * Prefix for all the imported component.

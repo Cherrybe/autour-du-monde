@@ -116,6 +116,7 @@
     format('woff2');
 }
 
+/* design tokens */
 :root {
   --font-body: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
   --font-hero: 'Poppins', 'Inter', sans-serif;
