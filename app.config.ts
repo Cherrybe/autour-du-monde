@@ -1,3 +1,5 @@
+import { generateShades } from "./shared/utils";
+
 interface AppConfig {
   title: string;
   ssr: boolean;
@@ -19,7 +21,9 @@ interface AppConfig {
 }
 
 // define base colors and generate their shades
-const colors = generateShades({
+const baseColors = {
+  black: "#080808",
+  white: "#fffef4",
   primary: "#1E88E5",
   secondary: "#424242",
   accent: "#82B1FF",
@@ -27,16 +31,18 @@ const colors = generateShades({
   info: "#2196F3",
   success: "#4CAF50",
   warning: "#FFC107",
-});
+} as const;
+
+const colors = generateShades(baseColors);
 
 const themes = {
   light: {
-    bg: colors["white"][50],
-    fg: colors["black"][900],
+    bg: colors.white[50],
+    fg: colors.black[95],
   },
   dark: {
-    bg: colors["black"][900],
-    fg: colors["white"][50],
+    bg: colors.black[95],
+    fg: colors.white[50],
   },
 };
 

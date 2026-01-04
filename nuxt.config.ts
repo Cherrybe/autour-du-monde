@@ -3,10 +3,15 @@ import config, { app } from "./app.config";
 const modules = [
   "@nuxtjs/tailwindcss",
   "@nuxt/eslint",
+  "@pinia/nuxt",
+  "@vueuse/nuxt",
   "@nuxt/fonts",
   "@nuxt/hints",
   "@nuxt/icon",
   "@nuxt/image",
+  "lenis/nuxt",
+  "@nuxtjs/robots",
+  "@nuxtjs/sitemap",
   "shadcn-nuxt",
 ];
 
