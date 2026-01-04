@@ -72,7 +72,7 @@ export const app: AppConfig = {
       prefix: "/fonts/",
     },
     defaults: {
-      weights: [300, 400, 500, 700, 900],
+      weights: [300, 400, 500, 600],
     },
     families: [
       {
@@ -80,8 +80,8 @@ export const app: AppConfig = {
         provider: "local",
       },
       {
-        name: "Geist Mono",
-        provider: "google",
+        name: "Poppins",
+        provider: "local",
       },
     ],
   },

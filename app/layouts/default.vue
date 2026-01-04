@@ -1,13 +1,13 @@
 <template>
 	<lenis-wrapper :options="{}">
 		<div class="position-relative z-1">
-			<site-header />
+			<!-- <site-header /> -->
 
 			<page-transition>
 				<slot />
 			</page-transition>
 
-		<site-footer />
+		<!-- <site-footer /> -->
 
 		<!-- <client-only>
 			<lazy-debug v-if="showDebug" />

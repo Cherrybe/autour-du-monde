@@ -5,7 +5,6 @@ const modules = [
   "@nuxt/eslint",
   "@pinia/nuxt",
   "@vueuse/nuxt",
-  "@nuxt/fonts",
   "@nuxt/hints",
   "@nuxt/icon",
   "@nuxt/image",
@@ -17,8 +16,8 @@ const modules = [
 
 export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
-  devtools: { enabled: true },
   modules,
+  css: ["@/assets/styles/fonts.css", "@/assets/styles/tailwind.css"],
   shadcn: {
     /**
      * Prefix for all the imported component.
@@ -42,4 +41,5 @@ export default defineNuxtConfig({
   eslint: {
     checker: true,
   },
+  devtools: { enabled: true },
 });
