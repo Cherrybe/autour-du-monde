@@ -1,10 +1,7 @@
 import type { Config } from "tailwindcss";
 
 export default <Partial<Config>>{
-  content: [
-    "./app/**/*.{vue,ts}",
-    "./pages/**/*.{vue,ts}",
-  ],
+  content: ["./app/**/*.{vue,ts}", "./pages/**/*.{vue,ts}"],
 
   theme: {
     extend: {
@@ -52,6 +49,10 @@ export default <Partial<Config>>{
           800: "#142115",
           900: "#0B100A",
         },
+      },
+      fontFamily: {
+        heading: ["Poppins", "sans-serif"],
+        body: ["Inter", "system-ui", "sans-serif"],
       },
     },
   },

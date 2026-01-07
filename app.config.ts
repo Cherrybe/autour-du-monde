@@ -18,6 +18,12 @@ interface AppConfig {
   link?: {
     prefetch: string;
   };
+  lenis: {
+    smooth: boolean;
+    lerp: number;
+    wheelMultiplier: number;
+    touchMultiplier: number;
+  };
 }
 
 // define base colors and generate their shades
@@ -87,6 +93,12 @@ export const app: AppConfig = {
   },
   link: {
     prefetch: "visibility", // nuxt default
+  },
+  lenis: {
+    smooth: true,
+    lerp: 0.1,
+    wheelMultiplier: 1,
+    touchMultiplier: 1,
   },
 };
 

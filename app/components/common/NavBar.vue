@@ -1,11 +1,10 @@
 <template>
   <header class="relative w-full bg-base-white border-b border-primary-100">
     <div class="mx-auto max-w-7xl px-6 h-16 flex items-center justify-between">
-      <!-- Logo -->
       <CommonLogo />
 
       <!-- Desktop nav -->
-      <div class="hidden lg:flex items-center gap-4">
+      <div class="hidden lg:flex items-center gap-5">
         <nav aria-label="Menu links" class="flex items-center gap-8">
           <CommonNavLink to="/services">Services</CommonNavLink>
           <CommonNavLink to="/about">About</CommonNavLink>

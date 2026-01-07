@@ -17,6 +17,9 @@ const modules = [
 export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
   modules,
+  image: {
+    provider: "ipx",
+  },
   css: ["@/assets/css/fonts.css", "@/assets/css/tailwind.css"],
   shadcn: {
     /**

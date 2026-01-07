@@ -9,7 +9,7 @@ import { computed } from "vue";
 
 type Size = "small" | "medium" | "large";
 type Variant = "filled" | "outline";
-type Color = "primary" | "secondary";
+type Color = "primary" | "secondary" | "ghost";
 
 const props = withDefaults(
   defineProps<{
@@ -41,11 +41,15 @@ const variants: Record<Variant, Record<Color, string>> = {
       "bg-primary-500 text-white hover:bg-primary-600 focus-visible:ring-primary-500",
     secondary:
       "bg-secondary-100 text-base-black hover:bg-secondary-200 focus-visible:ring-secondary-100",
+    ghost:
+      "bg-base-white text-base-white hover:bg-primary-200 focus-visible:ring-primary-500",
   },
   outline: {
     primary: "border border-primary-500 text-primary-500 hover:bg-primary-100",
     secondary:
       "border border-secondary-100 text-base-black hover:bg-secondary-100/20",
+    ghost:
+      "border border-base-white text-base-white hover:text-primary-200 focus-visible:ring-primary-500",
   },
 };
 
