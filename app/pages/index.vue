@@ -1,5 +1,6 @@
 <template>
   <div>
-    <CommonHero />
+    <SectionsHero />
+    <SectionsAbout />
   </div>
 </template>
