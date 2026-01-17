@@ -1,9 +1,11 @@
 <template>
-  <div class="position-relative z-1">
+  <div class="min-h-screen flex flex-col">
     <common-nav-bar />
 
-    <page-transition>
+    <page-transition class="flex-1">
       <slot />
     </page-transition>
+
+    <common-footer />
   </div>
 </template>
