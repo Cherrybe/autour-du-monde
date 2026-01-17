@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-base-white py-20">
+  <section class="bg-[#FEFEFE] py-20">
     <div
       class="mx-auto max-w-7xl px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center"
     >
