@@ -21,7 +21,7 @@
       class="relative z-10 flex h-full flex-col justify-end p-6"
     >
       <div
-        class="transform transition-transform duration-500 group-hover:-translate-y-28 md:group-hover:-translate-y-20 lg:group-hover:-translate-y-16"
+        class="transform transition-transform duration-500 group-hover:-translate-y-20 lg:group-hover:-translate-y-16"
       >
         <h3 class="text-lg font-semibold text-base-white">
           {{ name }}
