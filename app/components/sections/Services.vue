@@ -20,7 +20,7 @@
       </div>
 
       <!-- Bento cards -->
-      <div class="lg:col-span-8 grid grid-cols-1 md:grid-cols-2  pt-8">
+      <div class="lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-x-4 pt-8">
         <!-- Top card (spans full width) -->
         <CommonServiceCard
           featured
