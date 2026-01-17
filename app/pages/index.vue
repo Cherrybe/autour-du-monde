@@ -3,6 +3,6 @@
     <SectionsHero />
     <SectionsAbout />
     <SectionsServices />
-    <!-- <SectionsTestimonials /> -->
+    <SectionsTestimonials />
   </div>
 </template>
