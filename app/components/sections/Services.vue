@@ -1,14 +1,14 @@
 <template>
   <section class="bg-base-white py-20">
     <div
-      class="mx-auto max-w-7xl px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-start"
+      class="mx-auto max-w-7xl px-6 grid grid-cols-1 lg:grid-cols-12 gap-6 items-start"
     >
       <!-- Left content -->
       <div class="lg:col-span-4">
         <CommonSectionIntro label="Services" />
 
         <div class="flex flex-col items-start gap-6 mt-8">
-          <h2 class="font-heading text-3xl leading-[4.5rem] md:text-5xl font-semibold text-base-black">
+          <h2 class="font-heading text-3xl lg:leading-[3.5rem] md:text-5xl font-semibold text-base-black">
             Support That Feels Like Home,
             Even When You’re Far From It
           </h2>
@@ -20,7 +20,7 @@
       </div>
 
       <!-- Bento cards -->
-      <div class="lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-x-4 pt-8">
+      <div class="lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-y-4 md:gap-y-0 md:gap-x-4">
         <!-- Top card (spans full width) -->
         <CommonServiceCard
           featured

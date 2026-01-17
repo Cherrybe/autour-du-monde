@@ -1,7 +1,7 @@
 <template>
   <div
     :class="[
-      'relative rounded p-8 transition-shadow min-w-[24.938rem] bg-neutral-100 diagonal-border-gradient',
+      'relative rounded p-8 transition-shadow bg-neutral-100 diagonal-border-gradient',
       'flex flex-col min-h-full',
       spanClass,
     ]"

@@ -3,7 +3,7 @@
     <div
       class="mx-auto max-w-7xl px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center"
     >
-      <div class="lg:col-span-5">
+      <div class="hidden lg:block lg:col-span-5">
         <NuxtImg
           src="/images/home-about.jpg"
           alt="home-about session"
@@ -19,12 +19,12 @@
         <CommonSectionIntro label="About Us" />
 
         <h2
-          class="font-heading text-3xl md:text-5xl font-semibold text-base-black mb-4 w-[39.875rem]"
+          class="font-heading text-3xl md:text-5xl font-semibold text-base-black mb-4 max-w-[39.875rem]"
         >
           Your Journey, Our Expertise.
         </h2>
 
-        <p class="text-xl text-base-black w-[44.188rem] mb-4">
+        <p class="text-xl text-base-black max-w-[44.188rem] mb-4">
           At Autour du Monde Consult, we turn uncertainty into clarity for
           individuals building new lives in France and beyond. Founded by
           passionate legal specialists, we’re committed to empowering
