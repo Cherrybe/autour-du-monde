@@ -13,10 +13,9 @@
     <div class="relative mx-auto max-w-7xl px-6">
       <!-- Header -->
       <div class="mb-14">
-        <CommonSectionIntro label="Testimonials" theme="light" />
         <div class="max-w-[52.188rem]">
           <h2
-            class="mt-4 text-3xl md:text-5xl font-heading font-semibold text-base-white max-w-[44.688rem]"
+            class="text-3xl md:text-5xl font-heading font-semibold text-base-white max-w-[44.688rem]"
           >
             Client Success Stories That Speak for Themselves
           </h2>

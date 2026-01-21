@@ -1,11 +1,8 @@
 <template>
   <section class="py-20 bg-base-white">
     <div class="mx-auto max-w-7xl px-6">
-      <!-- Header -->
-      <CommonSectionIntro label="Our Team" />
-
       <h2
-        class="mt-6 font-heading text-3xl md:text-5xl font-semibold text-base-black"
+        class="font-heading text-3xl md:text-5xl font-semibold text-base-black"
       >
         Our Experts, Your Partners
       </h2>

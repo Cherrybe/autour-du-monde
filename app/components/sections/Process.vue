@@ -4,10 +4,8 @@
       
       <!-- Left content -->
       <div class="lg:col-span-5">
-        <CommonSectionIntro label="Our Process" />
-
         <h2
-          class="mt-6 font-body text-3xl md:text-5xl font-semibold text-base-black leading-tight max-w-[34.75rem]"
+          class="font-body text-3xl md:text-5xl font-semibold text-base-black leading-tight max-w-[34.75rem]"
         >
           How We Guide You Every Step of the Way
         </h2>

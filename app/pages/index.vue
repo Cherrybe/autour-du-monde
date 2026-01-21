@@ -6,6 +6,6 @@
     <SectionsTestimonials />
     <SectionsProcess />
     <SectionsTeam />
-    <!-- <SectionsContact /> -->
+    <SectionsContact />
   </div>
 </template>

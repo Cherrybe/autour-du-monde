@@ -7,7 +7,21 @@
     @apply font-body;
   }
 
-  h1, h2, h3, h4 {
+  h1,
+  h2,
+  h3,
+  h4 {
     @apply font-heading;
+  }
+
+  .form-label {
+    @apply block mb-2 text-sm font-medium text-base-black;
+  }
+
+  .form-input {
+    @apply w-full rounded-lg border border-primary-100
+         px-4 py-3 text-sm
+         placeholder:text-primary-400
+         focus:outline-none focus:ring-1 focus:ring-secondary-200;
   }
 }

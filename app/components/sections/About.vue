@@ -1,7 +1,7 @@
 <template>
   <section class="bg-[#FEFEFE] py-20">
     <div
-      class="mx-auto max-w-7xl px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center"
+      class="mx-auto max-w-7xl px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 "
     >
       <div class="hidden lg:block lg:col-span-5">
         <NuxtImg
@@ -16,8 +16,6 @@
 
       <!-- CONTENT -->
       <div class="lg:col-span-7">
-        <CommonSectionIntro label="About Us" />
-
         <h2
           class="font-heading text-3xl md:text-5xl font-semibold text-base-black mb-4 max-w-[39.875rem]"
         >

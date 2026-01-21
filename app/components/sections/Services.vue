@@ -5,9 +5,7 @@
     >
       <!-- Left content -->
       <div class="lg:col-span-4">
-        <CommonSectionIntro label="Services" />
-
-        <div class="flex flex-col items-start gap-6 mt-8">
+        <div class="flex flex-col items-start gap-6">
           <h2 class="font-heading text-3xl lg:leading-[3.5rem] md:text-5xl font-semibold text-base-black">
             Support That Feels Like Home,
             Even When You’re Far From It
@@ -30,7 +28,9 @@
           cta="Read More"
           icon-bg="bg-primary-100"
         >
-          <template #icon>⚖️</template>
+          <template #icon>
+            <IconsLegal />
+          </template>
         </CommonServiceCard>
 
         <!-- Bottom left -->
@@ -41,7 +41,9 @@
           class="md:mt-6"
           icon-bg="bg-primary-500"
         >
-          <template #icon>🧭</template>
+          <template #icon>
+            <IconsTravel />
+          </template>
         </CommonServiceCard>
 
         <!-- Bottom right -->
@@ -52,7 +54,9 @@
           class="md:mt-10"
           icon-bg="bg-primary-100"
         >
-          <template #icon>📁</template>
+          <template #icon>
+            <IconsAdmin />
+          </template>
         </CommonServiceCard>
       </div>
     </div>
