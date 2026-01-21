@@ -6,7 +6,9 @@
       >
         Connect With Our Consulting Team
       </h2>
-      <div class="mt-8 grid grid-cols-1 lg:grid-cols-12 seection gap-12 items-start">
+      <div
+        class="mt-8 grid grid-cols-1 lg:grid-cols-12 seection gap-12 items-start"
+      >
         <div class="lg:col-span-5">
           <p class="mt-4 text-secondary-600 leading-relaxed max-w-md">
             From visas to essential travel documents, we’re here to make every
@@ -45,25 +47,26 @@
                 <IconsLocation />
               </span>
               <span>
-                4 Rue Ferdinand Laulanie,<br >
+                4 Rue Ferdinand Laulanie,<br />
                 31100, Toulouse
               </span>
             </li>
           </ul>
 
           <!-- Map -->
-          <div class="mt-10 overflow-hidden rounded-xl">
-            <NuxtImg
-              src="/images/map.jpg"
-              alt="Office location map"
-              format="webp"
-              class="w-full h-[220px] object-cover"
+          <div class="mt-10 overflow-hidden rounded border">
+            <iframe
+              title="Office location"
+              src="https://www.google.com/maps?q=4%20Rue%20Ferdinand%20Laulanie,%2031100%20Toulouse&output=embed"
+              class="w-full h-[308px]"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
             />
           </div>
         </div>
 
         <div class="lg:col-span-7">
-          <div class="rounded-2xl border bg-base-white p-8 shadow-sm">
+          <div class="rounded border bg-base-white p-8 shadow-sm">
             <form class="grid grid-cols-1 gap-6">
               <!-- Full name -->
               <div>
@@ -74,7 +77,7 @@
                   placeholder="John Doe"
                   class="form-input"
                   required
-                >
+                />
               </div>
 
               <!-- Email -->
@@ -86,7 +89,7 @@
                   placeholder="john@example.com"
                   class="form-input"
                   required
-                >
+                />
               </div>
 
               <!-- Phone -->
@@ -97,12 +100,14 @@
                   type="tel"
                   placeholder="+33 1 23 45 67 89 / +233 24 123 4567"
                   class="form-input"
-                >
+                />
               </div>
 
               <!-- Service -->
               <div>
-                <label for="service" class="form-label">Service Interested In *</label>
+                <label for="service" class="form-label"
+                  >Service Interested In *</label
+                >
                 <select id="service" class="form-input" required>
                   <option value="">Select a service</option>
                   <option>Legal Assistance</option>
@@ -113,7 +118,9 @@
 
               <!-- Message -->
               <div>
-                <label for="message" class="form-label">How can we help you? *</label>
+                <label for="message" class="form-label"
+                  >How can we help you? *</label
+                >
                 <textarea
                   id="message"
                   rows="4"
