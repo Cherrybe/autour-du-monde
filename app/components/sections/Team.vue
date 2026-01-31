@@ -1,52 +1,79 @@
 <template>
-  <section class="py-20 bg-base-white">
+  <section class="py-20 bg-[#FEFEFE]">
     <div class="mx-auto max-w-7xl px-6">
       <h2
         class="font-heading text-3xl md:text-5xl font-semibold text-base-black"
       >
         Our Experts, Your Partners
       </h2>
-      <!-- Bento Grid -->
-      <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- CEO -->
-        <CommonTeamCard
-          class="md:col-span-2 lg:col-span-2"
-          name="Anthony Osei-Agyei"
-          position="Founder & CEO"
-          image="/images/team/anthony.jpg"
-          bio="Anthony brings years of legal and cross-border consulting experience, guiding clients with clarity, trust, and cultural understanding."
-        />
 
-        <!-- Card 2 -->
-        <CommonTeamCard
-          name="Mawuena Osei-Agyei"
-          position="Administrative Secretary"
-          image="/images/team/mawuena.jpg"
-          bio="Mawuena oversees daily operations, ensuring efficient coordination and clear communication."
-        />
+      <div class="mt-12 grid grid-cols-1 lg:grid-cols-[1fr_300px] gap-6">
+        <!-- Main feature -->
+        <CommonTeamFeature v-if="team[active]" :member="team[active]!" />
 
-        <!-- Bottom cards -->
-        <CommonTeamCard
-          name="Alexis Lecuyer"
-          position="Associate & Legal Expert"
-          image="/images/team/alexis.jpg"
-          bio="Alexis supports clients through complex legal and immigration processes with clarity and confidence."
-        />
-
-        <CommonTeamCard
-          name="Florian Esnault"
-          position="Communication & Legal Expert"
-          image="/images/team/florian.jpg"
-          bio="Florian bridges legal expertise with clear communication and structured documentation."
-        />
-
-        <CommonTeamCard
-          name="Timothy Yeboah"
-          position="Consultant & Technical Advisor"
-          image="/images/team/timothy.jpg"
-          bio="Timothy provides technical insight and strategic support across systems and workflows."
-        />
+        <!-- Side selectors -->
+        <div class="flex lg:flex-col gap-4">
+          <CommonTeamSelector
+            v-for="item in sideMembers"
+            :key="item.member.name"
+            :image="item.member.image"
+            :name="item.member.name"
+            @click="active = item.index"
+          />
+        </div>
       </div>
     </div>
   </section>
 </template>
+
+<script setup lang="ts">
+// import { computed, ref } from "vue";
+
+const active = ref(0);
+
+const team = [
+  {
+    name: "Anthony Osei-Agyei",
+    position: "Founder & CEO",
+    image: "/images/anthony.jpg",
+    bio: "Anthony brings extensive experience in legal advisory and cross-border consulting, supporting individuals and organisations navigating complex regulatory and migration landscapes. His work is grounded in clarity, trust, and a deep understanding of multicultural environments, enabling clients to make informed decisions with confidence.",
+    socials: [
+      { label: "LinkedIn", url: "#" },
+      { label: "X", url: "#" },
+    ],
+  },
+  {
+    name: "Mawuena Osei-Agyei",
+    position: "Administrative Secretary",
+    image: "/images/mawuena.jpg",
+    bio: "Mawuena plays a central role in the firm’s daily operations, coordinating administrative processes and ensuring smooth communication across teams and clients. With a strong eye for detail and organisation, she helps maintain efficiency, structure, and a seamless client experience.",
+    socials: [
+      { label: "LinkedIn", url: "#" },
+      { label: "X", url: "#" },
+    ],
+  },
+  {
+    name: "Timothy Yeboah",
+    position: "Consultant & Technical Advisor",
+    image: "/images/timmy.jpg",
+    bio: "Timothy provides technical guidance and strategic insight across digital systems and operational workflows. He supports the team by translating complex technical requirements into practical solutions, helping ensure reliability, scalability, and informed decision-making.",
+    socials: [{ label: "LinkedIn", url: "#" }],
+  },
+];
+
+
+const sideMembers = computed(() => {
+  const total = team.length;
+
+  return [
+    {
+      member: team[(active.value + 1) % total]!,
+      index: (active.value + 1) % total,
+    },
+    {
+      member: team[(active.value + 2) % total]!,
+      index: (active.value + 2) % total,
+    },
+  ];
+});
+</script>

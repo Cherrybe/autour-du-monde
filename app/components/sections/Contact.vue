@@ -47,7 +47,7 @@
                 <IconsLocation />
               </span>
               <span>
-                4 Rue Ferdinand Laulanie,<br />
+                4 Rue Ferdinand Laulanie,<br >
                 31100, Toulouse
               </span>
             </li>
@@ -77,7 +77,7 @@
                   placeholder="John Doe"
                   class="form-input"
                   required
-                />
+                >
               </div>
 
               <!-- Email -->
@@ -89,7 +89,7 @@
                   placeholder="john@example.com"
                   class="form-input"
                   required
-                />
+                >
               </div>
 
               <!-- Phone -->
@@ -100,7 +100,7 @@
                   type="tel"
                   placeholder="+33 1 23 45 67 89 / +233 24 123 4567"
                   class="form-input"
-                />
+                >
               </div>
 
               <!-- Service -->
