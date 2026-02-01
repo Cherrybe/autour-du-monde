@@ -1,7 +1,11 @@
 <template>
-  <div class="grid grid-cols-1 md:grid-cols-[420px_560px]">
+  <div
+    class="relative grid grid-cols-1 md:grid-cols-[320px_1fr] lg:grid-cols-[420px_560px] gap-6 items-start"
+  >
     <!-- Image -->
-    <div class="relative h-[34rem] rounded overflow-hidden">
+    <div
+      class="relative h-[20rem] sm:h-[22rem] md:h-[26rem] lg:h-[34rem] rounded-xl overflow-hidden"
+    >
       <NuxtImg
         :src="member.image"
         :alt="member.name"
@@ -11,13 +15,14 @@
     </div>
 
     <!-- Content -->
-    <div class="rounded-xl p-8 max-w-xl shadow-sm">
+    <div class="rounded max-w-xl">
       <div>
         <p
           class="text-sm font-semibold tracking-wide text-base-black/60 uppercase"
         >
           {{ member.position }}
         </p>
+
         <h3 class="mt-2 text-2xl font-semibold text-base-black">
           {{ member.name }}
         </h3>
@@ -27,7 +32,7 @@
         </p>
       </div>
 
-      <!-- Social links (max 3) -->
+      <!-- Social links -->
       <div class="mt-6 flex gap-3">
         <a
           v-for="(link, i) in member.socials"
@@ -38,6 +43,23 @@
           :aria-label="link.label"
         />
       </div>
+
+      <!-- Tablet & Mobile navigation -->
+      <button
+        @click="$emit('prev')"
+        class="lg:hidden absolute left-2 md:-left-4 top-1/2 -translate-y-1/2 z-10 size-10 rounded-full bg-white/30 backdrop-blur shadow-md flex items-center justify-center text-base-black/70 hover:text-base-black transition"
+        aria-label="Previous team member"
+      >
+        ‹
+      </button>
+
+      <button
+        @click="$emit('next')"
+        class="lg:hidden absolute right-2 md:right-4 top-1/2 -translate-y-1/2 z-10 size-10 rounded-full bg-white/30 backdrop-blur shadow-md flex items-center justify-center text-base-black/70 hover:text-base-black transition"
+        aria-label="Next team member"
+      >
+        ›
+      </button>
     </div>
   </div>
 </template>
@@ -51,5 +73,10 @@ defineProps<{
     bio: string;
     socials: { label: string; url: string }[];
   };
+}>();
+
+defineEmits<{
+  (e: "next"): void;
+  (e: "prev"): void;
 }>();
 </script>

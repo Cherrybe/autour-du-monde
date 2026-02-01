@@ -9,10 +9,15 @@
 
       <div class="mt-12 grid grid-cols-1 lg:grid-cols-[1fr_300px] gap-6">
         <!-- Main feature -->
-        <CommonTeamFeature v-if="team[active]" :member="team[active]!" />
+        <CommonTeamFeature
+          v-if="team[active]"
+          :member="team[active]!"
+          @next="active = (active + 1) % team.length"
+          @prev="active = (active - 1 + team.length) % team.length"
+        />
 
-        <!-- Side selectors -->
-        <div class="flex lg:flex-col gap-4">
+        <!-- Side selectors (desktop only) -->
+        <div class="hidden lg:flex lg:flex-col gap-4">
           <CommonTeamSelector
             v-for="item in sideMembers"
             :key="item.member.name"
@@ -38,8 +43,18 @@ const team = [
     image: "/images/anthony.jpg",
     bio: "Anthony brings extensive experience in legal advisory and cross-border consulting, supporting individuals and organisations navigating complex regulatory and migration landscapes. His work is grounded in clarity, trust, and a deep understanding of multicultural environments, enabling clients to make informed decisions with confidence.",
     socials: [
-      { label: "LinkedIn", url: "#" },
-      { label: "X", url: "#" },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/in/anthony-agyei-890b5387?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+      },
+      {
+        label: "Instagram",
+        url: "https://www.instagram.com/kwabena_osei_agyei?igsh=enJnanN4bGY5ejlp&utm_source=qr",
+      },
+      {
+        label: "Facebook",
+        url: "https://www.facebook.com/share/14UUmSmnr9C/?mibextid=wwXIfr",
+      },
     ],
   },
   {
@@ -48,8 +63,18 @@ const team = [
     image: "/images/mawuena.jpg",
     bio: "Mawuena plays a central role in the firm’s daily operations, coordinating administrative processes and ensuring smooth communication across teams and clients. With a strong eye for detail and organisation, she helps maintain efficiency, structure, and a seamless client experience.",
     socials: [
-      { label: "LinkedIn", url: "#" },
-      { label: "X", url: "#" },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/in/mawuena-acquah-payne-b213b932a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+      },
+      {
+        label: "Instagram",
+        url: "https://www.instagram.com/men.simaa?igsh=ZDFhNDc0dXJ0NWUz&utm_source=qr",
+      },
+      {
+        label: "Facebook",
+        url: "https://www.facebook.com/share/1GEyL69V82/?mibextid=wwXIfr",
+      },
     ],
   },
   {
@@ -57,10 +82,19 @@ const team = [
     position: "Consultant & Technical Advisor",
     image: "/images/timmy.jpg",
     bio: "Timothy provides technical guidance and strategic insight across digital systems and operational workflows. He supports the team by translating complex technical requirements into practical solutions, helping ensure reliability, scalability, and informed decision-making.",
-    socials: [{ label: "LinkedIn", url: "#" }],
+    socials: [
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/in/timothy-yeboah-556949172?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      },
+      {
+        label: "Instagram",
+        url: "https://www.instagram.com/timmy_turner485?utm_source=qr&igsh=MW11b3ljODExc2Vwbg==",
+      },
+      { label: "Facebook", url: "https://www.facebook.com/share/1GU36L389a/" },
+    ],
   },
 ];
-
 
 const sideMembers = computed(() => {
   const total = team.length;

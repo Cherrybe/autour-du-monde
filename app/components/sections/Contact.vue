@@ -67,16 +67,34 @@
 
         <div class="lg:col-span-7">
           <div class="rounded border bg-base-white p-8 shadow-sm">
-            <form class="grid grid-cols-1 gap-6">
+            <!-- Success message -->
+            <div
+              v-if="submitStatus === 'success'"
+              class="mb-6 p-4 rounded bg-green-50 border border-green-200 text-green-700"
+            >
+              Thank you for contacting us! We'll get back to you shortly.
+            </div>
+
+            <!-- Error message -->
+            <div
+              v-if="submitStatus === 'error'"
+              class="mb-6 p-4 rounded bg-red-50 border border-red-200 text-red-700"
+            >
+              {{ errorMessage }}
+            </div>
+
+            <form class="grid grid-cols-1 gap-6" @submit.prevent="handleSubmit">
               <!-- Full name -->
               <div>
                 <label for="fullName" class="form-label">Full Name *</label>
                 <input
                   id="fullName"
+                  v-model="formData.fullName"
                   type="text"
                   placeholder="John Doe"
                   class="form-input"
                   required
+                  :disabled="isSubmitting"
                 >
               </div>
 
@@ -85,10 +103,12 @@
                 <label for="email" class="form-label">Email Address *</label>
                 <input
                   id="email"
+                  v-model="formData.email"
                   type="email"
                   placeholder="john@example.com"
                   class="form-input"
                   required
+                  :disabled="isSubmitting"
                 >
               </div>
 
@@ -97,9 +117,11 @@
                 <label for="phone" class="form-label">Phone Number</label>
                 <input
                   id="phone"
+                  v-model="formData.phone"
                   type="tel"
                   placeholder="+33 1 23 45 67 89 / +233 24 123 4567"
                   class="form-input"
+                  :disabled="isSubmitting"
                 >
               </div>
 
@@ -108,7 +130,13 @@
                 <label for="service" class="form-label"
                   >Service Interested In *</label
                 >
-                <select id="service" class="form-input" required>
+                <select
+                  id="service"
+                  v-model="formData.service"
+                  class="form-input"
+                  required
+                  :disabled="isSubmitting"
+                >
                   <option value="">Select a service</option>
                   <option>Legal Assistance</option>
                   <option>Travel Consultancy</option>
@@ -123,10 +151,12 @@
                 >
                 <textarea
                   id="message"
+                  v-model="formData.message"
                   rows="4"
                   placeholder="Enter your message"
                   class="form-input resize-none"
                   required
+                  :disabled="isSubmitting"
                 />
               </div>
 
@@ -137,8 +167,9 @@
                 variant="filled"
                 color="primary"
                 class="w-full mt-2"
+                :disabled="isSubmitting"
               >
-                Send Message
+                {{ isSubmitting ? 'Sending...' : 'Send Message' }}
               </CommonButton>
             </form>
           </div>
@@ -147,3 +178,49 @@
     </div>
   </section>
 </template>
+
+<script setup lang="ts">
+const formData = reactive({
+  fullName: '',
+  email: '',
+  phone: '',
+  service: '',
+  message: '',
+});
+
+const isSubmitting = ref(false);
+const submitStatus = ref<'idle' | 'success' | 'error'>('idle');
+const errorMessage = ref('');
+
+const handleSubmit = async () => {
+  isSubmitting.value = true;
+  submitStatus.value = 'idle';
+  errorMessage.value = '';
+
+  try {
+    const response = await $fetch('/api/contact', {
+      method: 'POST',
+      body: formData,
+    });
+
+    submitStatus.value = 'success';
+    
+    // Reset form
+    formData.fullName = '';
+    formData.email = '';
+    formData.phone = '';
+    formData.service = '';
+    formData.message = '';
+
+    // Hide success message after 5 seconds
+    setTimeout(() => {
+      submitStatus.value = 'idle';
+    }, 5000);
+  } catch (error: any) {
+    submitStatus.value = 'error';
+    errorMessage.value = error.data?.message || 'Failed to send message. Please try again later.';
+  } finally {
+    isSubmitting.value = false;
+  }
+};
+</script>
