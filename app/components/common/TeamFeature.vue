@@ -39,7 +39,7 @@
           :key="i"
           :href="link.url"
           target="_blank"
-          class="text-primary-600 hover:text-primary-700 transition-colors"
+          class="text-primary-500 hover:text-primary-400 transition-colors"
           :aria-label="link.label"
         >
           <IconsLinkedin v-if="link.label === 'LinkedIn'" :size="32" />
