@@ -39,9 +39,13 @@
           :key="i"
           :href="link.url"
           target="_blank"
-          class="size-8 rounded-full bg-blue-400"
+          class="text-primary-600 hover:text-primary-700 transition-colors"
           :aria-label="link.label"
-        />
+        >
+          <IconsLinkedin v-if="link.label === 'LinkedIn'" :size="32" />
+          <IconsInstagram v-else-if="link.label === 'Instagram'" :size="32" />
+          <IconsFacebook v-else-if="link.label === 'Facebook'" :size="32" />
+        </a>
       </div>
 
       <!-- Tablet & Mobile navigation -->
