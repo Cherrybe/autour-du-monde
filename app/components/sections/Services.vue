@@ -1,13 +1,18 @@
 <template>
   <section id="services" class="bg-base-white py-20">
     <div
-      class="mx-auto max-w-7xl px-6 grid grid-cols-1 lg:grid-cols-12 gap-6 items-start"
+      class="mx-auto max-w-7xl px-6 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start"
     >
       <!-- Left content -->
       <div class="lg:col-span-4">
         <div class="flex flex-col items-start gap-6">
           <h2
-            class="font-heading text-3xl lg:leading-[3.5rem] md:text-5xl font-semibold text-base-black"
+            class="font-heading font-semibold text-base-black max-w-md lg:leading-[3.5rem]"
+            :class="
+              locale === 'fr'
+                ? 'text-[40px] md:text-[40px]'
+                : 'text-3xl md:text-5xl'
+            "
           >
             {{ $t("services.title") }}
           </h2>
@@ -16,7 +21,7 @@
             size="large"
             variant="filled"
             color="primary"
-            class="mt-4"
+            class="mt-2"
             @click="$router.push('#contact')"
           >
             {{ $t("services.cta") }}
@@ -25,10 +30,8 @@
       </div>
 
       <!-- Bento cards -->
-      <div
-        class="lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-y-4 md:gap-y-0 md:gap-x-4"
-      >
-        <!-- Top card (spans full width) -->
+      <div class="lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Featured card (full width on md+) -->
         <CommonServiceCard
           featured
           span-class="md:col-span-2"
@@ -42,12 +45,11 @@
           </template>
         </CommonServiceCard>
 
-        <!-- Bottom left -->
+        <!-- Travel -->
         <CommonServiceCard
           :title="$t('services.travel.title')"
           :description="$t('services.travel.description')"
           :cta="$t('services.travel.cta')"
-          class="md:mt-6"
           icon-bg="bg-primary-500"
         >
           <template #icon>
@@ -55,12 +57,11 @@
           </template>
         </CommonServiceCard>
 
-        <!-- Bottom right -->
+        <!-- Admin -->
         <CommonServiceCard
           :title="$t('services.admin.title')"
           :description="$t('services.admin.description')"
           :cta="$t('services.admin.cta')"
-          class="md:mt-10"
           icon-bg="bg-primary-100"
         >
           <template #icon>
@@ -71,3 +72,7 @@
     </div>
   </section>
 </template>
+
+<script setup lang="ts">
+const { locale } = useI18n();
+</script>
