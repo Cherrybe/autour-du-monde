@@ -74,12 +74,7 @@
               size="medium"
               variant="filled"
               color="secondary"
-              @click="
-                () => {
-                  isMenuOpen = false;
-                  $router.push('#contact');
-                }
-              "
+              @click="handleMobileBooking"
             >
               {{ $t("nav.cta") }}
             </CommonButton>
@@ -92,4 +87,10 @@
 
 <script setup lang="ts">
 const isMenuOpen = ref(false);
+const router = useRouter();
+
+const handleMobileBooking = () => {
+  isMenuOpen.value = false;
+  router.push("#contact");
+};
 </script>

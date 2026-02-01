@@ -1,28 +1,27 @@
 <template>
   <button
     type="button"
-    class="flex items-center gap-2
-           px-3 py-2 rounded-full
-           text-sm font-semibold
-           text-base-black
-           hover:text-primary-600
-           transition-colors"
-    @click="toggleLocale"
+    class="flex items-center gap-2 px-3 py-2 rounded-full text-sm font-semibold text-base-black hover:text-primary-600 transition-colors"
+    @click.stop="toggleLocale"
     aria-label="Switch language"
   >
     <!-- French -->
     <template v-if="locale === 'fr'">
-      <!-- <img
-        src="/icons/flags/fr.svg"
-        alt="Français"
+      <img
+        src="/svgs/france.svg"
+        alt="Globe icon"
         class="h-4 w-4 rounded-sm"
-      /> -->
+      />
       <span>FR</span>
     </template>
 
     <!-- English -->
     <template v-else>
-      <!-- <IconsGlobe class="h-4 w-4" /> -->
+      <img
+        src="/svgs/globe.svg"
+        alt="Globe icon"
+        class="h-4 w-4 rounded-sm"
+      />
       <span>EN</span>
     </template>
   </button>
