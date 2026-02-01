@@ -1,5 +1,5 @@
 <template>
-  <section class="py-20 bg-base-white">
+  <section id="contact" class="py-20 bg-base-white">
     <div class="mx-auto max-w-7xl px-6">
       <h2
         class="font-heading text-3xl md:text-5xl font-semibold text-base-black"
@@ -45,7 +45,7 @@
                 <IconsLocation />
               </span>
               <span>
-                4 Rue Ferdinand Laulanie,<br />
+                4 Rue Ferdinand Laulanie,<br >
                 31100, Toulouse
               </span>
             </li>
@@ -95,7 +95,7 @@
                   class="form-input"
                   required
                   :disabled="isSubmitting"
-                />
+                >
               </div>
 
               <!-- Email -->
@@ -111,7 +111,7 @@
                   class="form-input"
                   required
                   :disabled="isSubmitting"
-                />
+                >
               </div>
 
               <!-- Phone -->
@@ -126,7 +126,7 @@
                   :placeholder="$t('contact.form.phonePlaceholder')"
                   class="form-input"
                   :disabled="isSubmitting"
-                />
+                >
               </div>
 
               <!-- Service -->

@@ -1,10 +1,11 @@
 {
   "nav": {
     "home": "Accueil",
-    "about": "À Propos",
+    "about": "À propos",
     "services": "Services",
     "team": "Équipe",
-    "contact": "Contact"
+    "contact": "Contact",
+    "cta": "Réserver une consultation"
   },
   "hero": {
     "title": "Votre Passerelle vers les Voyages Internationaux et Solutions Juridiques",

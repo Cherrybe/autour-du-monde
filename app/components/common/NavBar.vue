@@ -6,16 +6,15 @@
       <!-- Desktop nav -->
       <div class="hidden lg:flex items-center gap-5">
         <nav aria-label="Menu links" class="flex items-center gap-8">
-          <CommonNavLink to="/services">{{ $t("nav.services") }}</CommonNavLink>
-          <CommonNavLink to="/about">{{ $t("nav.about") }}</CommonNavLink>
-          <CommonNavLink to="/faq">FAQ</CommonNavLink>
+          <CommonNavLink to="#services">{{ $t("nav.services") }}</CommonNavLink>
+          <CommonNavLink to="#about">{{ $t("nav.about") }}</CommonNavLink>
           <CommonNavLink to="#contact">{{ $t("nav.contact") }}</CommonNavLink>
         </nav>
 
         <CommonLanguageSwitcher />
 
         <CommonButton size="medium" variant="filled" color="secondary">
-          Book Consultation
+          {{ $t("nav.cta") }}
         </CommonButton>
       </div>
 
@@ -41,25 +40,18 @@
             class="flex flex-col divide-y divide-[#E7E7E7]"
           >
             <CommonNavLink
-              to="/services"
+              to="#services"
               class="py-4 !text-lg"
               @click="isMenuOpen = false"
             >
               {{ $t("nav.services") }}
             </CommonNavLink>
             <CommonNavLink
-              to="/about"
+              to="#about"
               class="py-4 !text-lg"
               @click="isMenuOpen = false"
             >
               {{ $t("nav.about") }}
-            </CommonNavLink>
-            <CommonNavLink
-              to="/faq"
-              class="py-4 !text-lg"
-              @click="isMenuOpen = false"
-            >
-              FAQ
             </CommonNavLink>
             <CommonNavLink
               to="#contact"
@@ -79,7 +71,7 @@
               color="secondary"
               @click="isMenuOpen = false"
             >
-              Book Consultation
+              {{ $t("nav.cta") }}
             </CommonButton>
           </div>
         </div>
