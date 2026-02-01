@@ -14,7 +14,12 @@
 
         <!-- CTA -->
         <div class="flex md:justify-end">
-          <CommonButton size="medium" variant="filled" color="secondary">
+          <CommonButton
+            size="medium"
+            variant="filled"
+            color="secondary"
+            @click="$router.push('#contact')"
+          >
             {{ $t("footer.cta") }}
           </CommonButton>
         </div>

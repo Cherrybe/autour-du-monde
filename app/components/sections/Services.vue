@@ -17,6 +17,7 @@
             variant="filled"
             color="primary"
             class="mt-4"
+            @click="$router.push('#contact')"
           >
             {{ $t("services.cta") }}
           </CommonButton>

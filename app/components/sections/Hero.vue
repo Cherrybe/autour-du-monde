@@ -22,11 +22,21 @@
           ref="ctaRef"
           class="flex flex-col items-start gap-4 pt-2 min-[412px]:flex-row min-[412px]:items-center"
         >
-          <CommonButton size="medium" variant="filled" color="secondary">
+          <CommonButton
+            size="medium"
+            variant="filled"
+            color="secondary"
+            @click="$router.push('#services')"
+          >
             {{ $t("hero.cta") }}
           </CommonButton>
 
-          <CommonButton size="medium" variant="outline" color="ghost">
+          <CommonButton
+            size="medium"
+            variant="outline"
+            color="ghost"
+            @click="$router.push('#process')"
+          >
             {{ $t("hero.cta2") }}
           </CommonButton>
         </div>

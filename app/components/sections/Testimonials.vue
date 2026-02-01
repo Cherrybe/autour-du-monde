@@ -30,6 +30,7 @@
           variant="filled"
           color="secondary"
           class="mt-6"
+          @click="$router.push('#contact')"
         >
           {{ $t("testimonials.cta") }}
         </CommonButton>

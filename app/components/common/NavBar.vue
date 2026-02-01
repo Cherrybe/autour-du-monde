@@ -13,7 +13,12 @@
 
         <CommonLanguageSwitcher />
 
-        <CommonButton size="medium" variant="filled" color="secondary">
+        <CommonButton
+          size="medium"
+          variant="filled"
+          color="secondary"
+          @click="$router.push('#contact')"
+        >
           {{ $t("nav.cta") }}
         </CommonButton>
       </div>
@@ -69,7 +74,12 @@
               size="medium"
               variant="filled"
               color="secondary"
-              @click="isMenuOpen = false"
+              @click="
+                () => {
+                  isMenuOpen = false;
+                  $router.push('#contact');
+                }
+              "
             >
               {{ $t("nav.cta") }}
             </CommonButton>

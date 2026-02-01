@@ -70,7 +70,12 @@
         </ul>
 
         <!-- CTA -->
-        <CommonButton size="large" variant="filled" color="primary">
+        <CommonButton
+          size="large"
+          variant="filled"
+          color="primary"
+          @click="$router.push('#contact')"
+        >
           {{ $t("about.cta") }}
         </CommonButton>
       </div>
