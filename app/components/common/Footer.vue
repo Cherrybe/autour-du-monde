@@ -15,7 +15,7 @@
         <!-- CTA -->
         <div class="flex md:justify-end">
           <CommonButton size="medium" variant="filled" color="secondary">
-            Contact Us
+            {{ $t("footer.cta") }}
           </CommonButton>
         </div>
       </div>
@@ -37,12 +37,18 @@
       >
         <!-- Copyright -->
         <span class="opacity-80">
-          Copyright© {{ new Date().getFullYear() }} autourdumondeconsult
+          {{ $t("footer.copyright") }}
+          {{ new Date().getFullYear() }} autourdumondeconsult
         </span>
 
         <!-- Socials -->
         <div class="flex gap-6">
-          <a target="_blank" href="https://www.instagram.com/autourdumonde_consult?igsh=MW45cjY5eWRkaThmYQ==" aria-label="Instagram" class="hover:opacity-80">
+          <a
+            target="_blank"
+            href="https://www.instagram.com/autourdumonde_consult?igsh=MW45cjY5eWRkaThmYQ=="
+            aria-label="Instagram"
+            class="hover:opacity-80"
+          >
             <IconsInstagram />
           </a>
         </div>

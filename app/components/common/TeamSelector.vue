@@ -10,7 +10,7 @@
     />
     <div
       class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"
-    ></div>
+    />
   </button>
 </template>
 

@@ -1,8 +1,6 @@
 <template>
   <section class="bg-[#FEFEFE] py-20">
-    <div
-      class="mx-auto max-w-7xl px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 "
-    >
+    <div class="mx-auto max-w-7xl px-6 grid grid-cols-1 lg:grid-cols-12 gap-12">
       <div class="hidden lg:block lg:col-span-5">
         <NuxtImg
           src="/images/home-about.jpg"
@@ -19,14 +17,11 @@
         <h2
           class="font-heading text-3xl md:text-5xl font-semibold text-base-black mb-4 max-w-[39.875rem]"
         >
-          Your Journey, Our Expertise.
+          {{ $t("about.title") }}
         </h2>
 
         <p class="text-xl text-base-black max-w-[44.188rem] mb-4">
-          At Autour du Monde Consult, we turn uncertainty into clarity for
-          individuals building new lives in France and beyond. Founded by
-          passionate legal specialists, we’re committed to empowering
-          communities, breaking barriers, and guiding you every step of the way.
+          {{ $t("about.description") }}
         </p>
 
         <!-- Bullet points -->
@@ -39,9 +34,9 @@
             </span>
             <p class="text-base-black text-xl">
               <strong class="font-semibold">
-                A mission rooted in community,
+                {{ $t("about.bulletPoints.mission.label") }}
               </strong>
-              built to uplift and support the diaspora.
+              {{ $t("about.bulletPoints.mission.text") }}
             </p>
           </li>
 
@@ -53,9 +48,9 @@
             </span>
             <p class="text-base-black text-xl">
               <strong class="font-semibold">
-                A team that speaks your language,
+                {{ $t("about.bulletPoints.team.label") }}
               </strong>
-              professionally and culturally.
+              {{ $t("about.bulletPoints.team.text") }}
             </p>
           </li>
 
@@ -67,16 +62,16 @@
             </span>
             <p class="text-base-black text-xl">
               <strong class="font-semibold">
-                A track record of real impact,
+                {{ $t("about.bulletPoints.track.label") }}
               </strong>
-              helping clients navigate their journey with confidence.
+              {{ $t("about.bulletPoints.track.text") }}
             </p>
           </li>
         </ul>
 
         <!-- CTA -->
         <CommonButton size="large" variant="filled" color="primary">
-          Book a Consultation
+          {{ $t("about.cta") }}
         </CommonButton>
       </div>
     </div>

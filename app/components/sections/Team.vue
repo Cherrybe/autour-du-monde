@@ -4,7 +4,7 @@
       <h2
         class="font-heading text-3xl md:text-5xl font-semibold text-base-black"
       >
-        Our Experts, Your Partners
+        {{ $t("team.title") }}
       </h2>
 
       <div class="mt-12 grid grid-cols-1 lg:grid-cols-[1fr_300px] gap-6">
@@ -32,16 +32,15 @@
 </template>
 
 <script setup lang="ts">
-// import { computed, ref } from "vue";
-
+const { t } = useI18n();
 const active = ref(0);
 
-const team = [
+const team = computed(() => [
   {
-    name: "Anthony Osei-Agyei",
-    position: "Founder & CEO",
+    name: t("team.members.anthony.name"),
+    position: t("team.members.anthony.position"),
     image: "/images/anthony.jpg",
-    bio: "Anthony brings extensive experience in legal advisory and cross-border consulting, supporting individuals and organisations navigating complex regulatory and migration landscapes. His work is grounded in clarity, trust, and a deep understanding of multicultural environments, enabling clients to make informed decisions with confidence.",
+    bio: t("team.members.anthony.bio"),
     socials: [
       {
         label: "LinkedIn",
@@ -58,10 +57,10 @@ const team = [
     ],
   },
   {
-    name: "Mawuena Osei-Agyei",
-    position: "Administrative Secretary",
+    name: t("team.members.mawuena.name"),
+    position: t("team.members.mawuena.position"),
     image: "/images/mawuena.jpg",
-    bio: "Mawuena plays a central role in the firm’s daily operations, coordinating administrative processes and ensuring smooth communication across teams and clients. With a strong eye for detail and organisation, she helps maintain efficiency, structure, and a seamless client experience.",
+    bio: t("team.members.mawuena.bio"),
     socials: [
       {
         label: "LinkedIn",
@@ -78,10 +77,10 @@ const team = [
     ],
   },
   {
-    name: "Timothy Yeboah",
-    position: "Consultant & Technical Advisor",
+    name: t("team.members.timothy.name"),
+    position: t("team.members.timothy.position"),
     image: "/images/timmy.jpg",
-    bio: "Timothy provides technical guidance and strategic insight across digital systems and operational workflows. He supports the team by translating complex technical requirements into practical solutions, helping ensure reliability, scalability, and informed decision-making.",
+    bio: t("team.members.timothy.bio"),
     socials: [
       {
         label: "LinkedIn",
@@ -94,18 +93,18 @@ const team = [
       { label: "Facebook", url: "https://www.facebook.com/share/1GU36L389a/" },
     ],
   },
-];
+]);
 
 const sideMembers = computed(() => {
-  const total = team.length;
+  const total = team.value.length;
 
   return [
     {
-      member: team[(active.value + 1) % total]!,
+      member: team.value[(active.value + 1) % total]!,
       index: (active.value + 1) % total,
     },
     {
-      member: team[(active.value + 2) % total]!,
+      member: team.value[(active.value + 2) % total]!,
       index: (active.value + 2) % total,
     },
   ];

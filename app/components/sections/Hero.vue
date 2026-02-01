@@ -11,15 +11,11 @@
           ref="titleRef"
           class="font-heading text-4xl md:text-5xl leading-tight"
         >
-          Your Journey Deserves Care, Clarity, and Expertise.
+          {{ $t("hero.title") }}
         </h1>
 
-        <p
-          ref="textRef"
-          class="max-w-lg text-base-white/80"
-        >
-          We provide trusted guidance for immigration, travel, and settlement —
-          helping you move forward with confidence, every step of the way.
+        <p ref="textRef" class="max-w-lg text-base-white/80">
+          {{ $t("hero.subtitle") }}
         </p>
 
         <div
@@ -27,11 +23,11 @@
           class="flex flex-col items-start gap-4 pt-2 min-[412px]:flex-row min-[412px]:items-center"
         >
           <CommonButton size="medium" variant="filled" color="secondary">
-            Book a Consultation
+            {{ $t("hero.cta") }}
           </CommonButton>
 
           <CommonButton size="medium" variant="outline" color="ghost">
-            Learn How We Help
+            {{ $t("hero.cta2") }}
           </CommonButton>
         </div>
       </div>
@@ -59,13 +55,13 @@
 </template>
 
 <script setup lang="ts">
-import { gsap } from "gsap"
+import { gsap } from "gsap";
 
-const sectionRef = ref<HTMLElement | null>(null)
-const titleRef = ref<HTMLElement | null>(null)
-const textRef = ref<HTMLElement | null>(null)
-const ctaRef = ref<HTMLElement | null>(null)
-const imageRef = ref<HTMLElement | null>(null)
+const sectionRef = ref<HTMLElement | null>(null);
+const titleRef = ref<HTMLElement | null>(null);
+const textRef = ref<HTMLElement | null>(null);
+const ctaRef = ref<HTMLElement | null>(null);
+const imageRef = ref<HTMLElement | null>(null);
 
 tryOnMounted(() => {
   const tl = gsap.timeline({
@@ -73,12 +69,12 @@ tryOnMounted(() => {
       ease: "power3.out",
       duration: 0.8,
     },
-  })
+  });
 
   tl.from(sectionRef.value, {
     opacity: 0,
     duration: 0.6,
-  })
+  });
 
   tl.from(
     titleRef.value,
@@ -86,8 +82,8 @@ tryOnMounted(() => {
       y: 24,
       opacity: 0,
     },
-    "-=0.3"
-  )
+    "-=0.3",
+  );
 
   tl.from(
     textRef.value,
@@ -95,8 +91,8 @@ tryOnMounted(() => {
       y: 16,
       opacity: 0,
     },
-    "-=0.4"
-  )
+    "-=0.4",
+  );
 
   tl.from(
     ctaRef.value,
@@ -104,8 +100,8 @@ tryOnMounted(() => {
       y: 12,
       opacity: 0,
     },
-    "-=0.4"
-  )
+    "-=0.4",
+  );
 
   if (imageRef.value) {
     tl.from(
@@ -114,8 +110,8 @@ tryOnMounted(() => {
         y: 20,
         opacity: 0,
       },
-      "-=0.5"
-    )
+      "-=0.5",
+    );
   }
-})
+});
 </script>

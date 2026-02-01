@@ -1,0 +1,163 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "team": "Team",
+    "contact": "Contact",
+    "faq": "FAQ",
+    "cta": "Book Consultation"
+  },
+  "hero": {
+    "title": "Your Gateway to Global Travel & Legal Solutions",
+    "subtitle": "Navigating visas, immigration, and travel logistics with expert precision.",
+    "cta": "Get Started Today",
+    "cta2": "Learn How We Help"
+  },
+  "about": {
+    "title": "Your Journey, Our Expertise.",
+    "description": "At Autour du Monde Consult, we turn uncertainty into clarity for individuals building new lives in France and beyond. Founded by passionate legal specialists, we’re committed to empowering communities, breaking barriers, and guiding you every step of the way.",
+    "bulletPoints": {
+      "mission": {
+        "label": "A mission rooted in community,",
+        "text": "built to uplift and support the diaspora."
+      },
+      "team": {
+        "label": "A team that speaks your language,",
+        "text": "professionally and culturally."
+      },
+      "track": {
+        "label": "A track record of real impact,",
+        "text": "helping clients navigate their journey with confidence."
+      }
+    },
+    "cta": "Book a Consultation"
+  },
+  "services": {
+    "title": "Support That Feels Like Home, Even When You're Far From It",
+    "subtitle": "Comprehensive support for your international journey",
+    "cta": "View More Services",
+    "legal": {
+      "title": "Legal Assistance",
+      "description": "Empowering migration dreams with expert legal guidance. We help you navigate French immigration laws with clarity and confidence.",
+      "cta": "Read More"
+    },
+    "travel": {
+      "title": "Travel Consultancy",
+      "description": "Strategic, tailored advice for every stage of your journey. Plan your move to France with confidence and foresight.",
+      "cta": "Read More"
+    },
+    "admin": {
+      "title": "Admin Support",
+      "description": "A one-stop solution for documentation and processes. We streamline the details so you can focus on your future.",
+      "cta": "Read More"
+    },
+    "learnMore": "Learn More"
+  },
+  "process": {
+    "title": "How We Guide You Every Step of the Way",
+    "subtitle": "A simple, transparent process from start to finish",
+    "consulting": {
+      "title": "Consulting",
+      "description": "We begin by listening to your story, understanding your goals, and identifying the best path forward. This first conversation helps us tailor our guidance to your unique situation and ensure you feel supported from the very start."
+    },
+    "documentation": {
+      "title": "Documentation",
+      "description": "Our team walks you through every document you need, explaining each requirement in simple terms. We help you collect, organize, and verify all paperwork to avoid delays, mistakes, or rejections."
+    },
+    "application": {
+      "title": "Application",
+      "description": "Once your documents are ready, we handle the full submission process—filling out forms, coordinating with institutions, and ensuring everything meets official standards. You stay informed while we manage the heavy lifting."
+    },
+    "approval": {
+      "title": "Approval",
+      "description": "When your application is approved, we guide you through the next steps so you can prepare for your journey stress-free. With everything handled professionally, you move forward feeling confident, supported, and ready."
+    },
+    "consultation": {
+      "title": "Consultation",
+      "description": "We discuss your needs and provide tailored advice."
+    },
+    "submission": {
+      "title": "Submission",
+      "description": "We submit applications to relevant authorities on your behalf."
+    },
+    "followUp": {
+      "title": "Follow-up",
+      "description": "We track progress and keep you informed every step."
+    }
+  },
+  "team": {
+    "title": "Our Experts, Your Partners",
+    "members": {
+      "anthony": {
+        "name": "Anthony Osei-Agyei",
+        "position": "Founder & CEO",
+        "bio": "Anthony brings extensive experience in legal advisory and cross-border consulting, supporting individuals and organisations navigating complex regulatory and migration landscapes. His work is grounded in clarity, trust, and a deep understanding of multicultural environments, enabling clients to make informed decisions with confidence."
+      },
+      "mawuena": {
+        "name": "Mawuena Osei-Agyei",
+        "position": "Administrative Secretary",
+        "bio": "Mawuena plays a central role in the firm's daily operations, coordinating administrative processes and ensuring smooth communication across teams and clients. With a strong eye for detail and organisation, she helps maintain efficiency, structure, and a seamless client experience."
+      },
+      "timothy": {
+        "name": "Timothy Yeboah",
+        "position": "Consultant & Technical Advisor",
+        "bio": "Timothy provides technical guidance and strategic insight across digital systems and operational workflows. He supports the team by translating complex technical requirements into practical solutions, helping ensure reliability, scalability, and informed decision-making."
+      }
+    }
+  },
+  "testimonials": {
+    "title": "Client Success Stories That Speak for Themselves",
+    "subtitle": "We're a team of dedicated consultants passionate about helping our clients grow, adapt, and thrive. Turning challenges abroad into opportunities and making every journey feel supported and at home.",
+    "cta": "View More Reviews",
+    "reviews": {
+      "prince": {
+        "author": "Prince",
+        "text": "My wife and I wanted to start a business, but the language barrier made the legal process difficult. Autour du Monde Consult connected us with a commercial law expert and stayed by our side through every step to ensure a smooth setup. Today, they remain a trusted partner, reviewing our contracts and helping us avoid any legal lapses."
+      },
+      "josephine": {
+        "author": "Josephine",
+        "text": "After years in France, I needed to change my residency status and was told it would be costly. Autour du Monde Consult guided me through the process clearly and without stress. Everything was explained in a way I could easily understand, and I achieved my goal without unnecessary costs."
+      },
+      "mercy": {
+        "author": "Mercy B.",
+        "text": "Traveling to Ghana used to be stressful due to my tight schedule and the visa process. Autour du Monde Consult now handles everything efficiently and always delivers on time. For over two years, they've been trusted partners managing all my consular travel needs with professionalism and ease."
+      }
+    }
+  },
+  "contact": {
+    "title": "Connect With Our Consulting Team",
+    "description": "From visas to essential travel documents, we're here to make every step easier. Get in touch and let our team handle the details while you focus on your journey.",
+    "contactVia": "You can also contact us via",
+    "form": {
+      "fullName": "Full Name",
+      "fullNamePlaceholder": "John Doe",
+      "email": "Email Address",
+      "emailPlaceholder": "john{'@'}example.com",
+      "phone": "Phone Number",
+      "phonePlaceholder": "+33 1 23 45 67 89 / +233 24 123 4567",
+      "service": "Service Interested In",
+      "servicePlaceholder": "Select a service",
+      "message": "How can we help you?",
+      "messagePlaceholder": "Enter your message",
+      "submit": "Send Message",
+      "submitting": "Sending...",
+      "required": "*",
+      "services": {
+        "legal": "Legal Assistance",
+        "travel": "Travel Consultancy",
+        "admin": "Admin Support"
+      }
+    },
+    "success": "Thank you for contacting us! We'll get back to you shortly.",
+    "error": "Failed to send message. Please try again later."
+  },
+  "footer": {
+    "description": "Your trusted partner for global travel and legal solutions.",
+    "quickLinks": "Quick Links",
+    "followUs": "Follow Us",
+    "rights": "All rights reserved.",
+    "cta": "Contact Us",
+    "copyright": "Copyright©"
+  }
+}

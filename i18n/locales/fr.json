@@ -1,0 +1,163 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "services": "Services",
+    "team": "Équipe",
+    "contact": "Contact",
+    "faq": "FAQ",
+    "cta": "Réserver une consultation"
+  },
+  "hero": {
+    "title": "Votre passerelle vers les voyages internationaux et les solutions juridiques",
+    "subtitle": "Accompagnement expert en visas, immigration et formalités de voyage.",
+    "cta": "Commencer dès aujourd’hui",
+    "cta2": "Découvrir comment nous aidons"
+  },
+  "about": {
+    "title": "Votre parcours, notre expertise.",
+    "description": "Chez Autour du Monde Consult, nous transformons l’incertitude en clarté pour les personnes qui construisent une nouvelle vie en France et ailleurs. Fondé par des spécialistes juridiques passionnés, notre cabinet s’engage à accompagner les communautés, à lever les barrières et à vous guider à chaque étape.",
+    "bulletPoints": {
+      "mission": {
+        "label": "Une mission ancrée dans la communauté,",
+        "text": "pensée pour soutenir et valoriser la diaspora."
+      },
+      "team": {
+        "label": "Une équipe qui parle votre langue,",
+        "text": "tant sur le plan professionnel que culturel."
+      },
+      "track": {
+        "label": "Un impact concret et mesurable,",
+        "text": "aidant nos clients à avancer avec confiance."
+      }
+    },
+    "cta": "Réserver une consultation"
+  },
+  "services": {
+    "title": "Un accompagnement qui vous fait sentir chez vous, même loin",
+    "subtitle": "Un soutien complet pour votre parcours international",
+    "cta": "Voir plus de services",
+    "legal": {
+      "title": "Assistance juridique",
+      "description": "Donner vie à vos projets migratoires grâce à un accompagnement juridique expert. Nous vous aidons à naviguer dans le droit de l’immigration française avec clarté et sérénité.",
+      "cta": "En savoir plus"
+    },
+    "travel": {
+      "title": "Conseil en voyage",
+      "description": "Des conseils stratégiques et personnalisés à chaque étape de votre parcours. Préparez votre installation en France avec confiance et anticipation.",
+      "cta": "En savoir plus"
+    },
+    "admin": {
+      "title": "Support administratif",
+      "description": "Une solution centralisée pour vos démarches et documents. Nous simplifions les formalités pour que vous puissiez vous concentrer sur votre avenir.",
+      "cta": "En savoir plus"
+    },
+    "learnMore": "En savoir plus"
+  },
+  "process": {
+    "title": "Comment nous vous accompagnons à chaque étape",
+    "subtitle": "Un processus simple et transparent du début à la fin",
+    "consulting": {
+      "title": "Consultation",
+      "description": "Nous commençons par écouter votre histoire, comprendre vos objectifs et identifier la meilleure voie à suivre. Cet échange initial nous permet d’adapter notre accompagnement à votre situation et de vous offrir un soutien dès le départ."
+    },
+    "documentation": {
+      "title": "Documentation",
+      "description": "Notre équipe vous accompagne dans la préparation de chaque document, en expliquant clairement chaque exigence. Nous vous aidons à rassembler, organiser et vérifier vos dossiers afin d’éviter retards, erreurs ou refus."
+    },
+    "application": {
+      "title": "Dépôt de dossier",
+      "description": "Une fois vos documents prêts, nous prenons en charge l’ensemble de la procédure : formulaires, coordination avec les institutions et conformité aux exigences officielles. Vous restez informé pendant que nous gérons les démarches."
+    },
+    "approval": {
+      "title": "Validation",
+      "description": "Après l’approbation de votre dossier, nous vous guidons dans les prochaines étapes afin que vous puissiez préparer votre projet en toute sérénité. Vous avancez avec confiance, soutenu à chaque instant."
+    },
+    "consultation": {
+      "title": "Consultation",
+      "description": "Nous analysons vos besoins et vous proposons des conseils personnalisés."
+    },
+    "submission": {
+      "title": "Soumission",
+      "description": "Nous déposons les dossiers auprès des autorités compétentes en votre nom."
+    },
+    "followUp": {
+      "title": "Suivi",
+      "description": "Nous assurons le suivi et vous tenons informé à chaque étape."
+    }
+  },
+  "team": {
+    "title": "Nos experts, vos partenaires",
+    "members": {
+      "anthony": {
+        "name": "Anthony Osei-Agyei",
+        "position": "Fondateur & CEO",
+        "bio": "Anthony possède une solide expérience en conseil juridique et en accompagnement transfrontalier. Il aide les particuliers et les organisations à évoluer dans des environnements réglementaires et migratoires complexes, avec une approche fondée sur la clarté, la confiance et une compréhension approfondie des contextes multiculturels."
+      },
+      "mawuena": {
+        "name": "Mawuena Osei-Agyei",
+        "position": "Secrétaire administrative",
+        "bio": "Mawuena joue un rôle clé dans le bon fonctionnement quotidien du cabinet. Elle coordonne les processus administratifs et assure une communication fluide entre les équipes et les clients, contribuant ainsi à une organisation efficace et à une expérience client harmonieuse."
+      },
+      "timothy": {
+        "name": "Timothy Yeboah",
+        "position": "Consultant & Conseiller technique",
+        "bio": "Timothy apporte une expertise technique et une vision stratégique sur les systèmes numériques et les processus opérationnels. Il accompagne l’équipe en transformant des exigences techniques complexes en solutions pratiques et fiables."
+      }
+    }
+  },
+  "testimonials": {
+    "title": "Des témoignages clients qui parlent d’eux-mêmes",
+    "subtitle": "Nous sommes une équipe de consultants engagés, passionnés par l’accompagnement de nos clients dans leur évolution et leur réussite. Nous transformons les défis à l’étranger en opportunités, pour que chaque parcours se déroule en toute sérénité.",
+    "cta": "Voir plus d’avis",
+    "reviews": {
+      "prince": {
+        "author": "Prince",
+        "text": "Ma femme et moi souhaitions créer une entreprise, mais la barrière de la langue rendait les démarches juridiques complexes. Autour du Monde Consult nous a mis en relation avec un expert en droit commercial et nous a accompagnés à chaque étape pour garantir une création fluide. Aujourd’hui encore, ils restent un partenaire de confiance."
+      },
+      "josephine": {
+        "author": "Josephine",
+        "text": "Après plusieurs années en France, je devais changer de statut de résidence et l’on m’avait annoncé des coûts élevés. Autour du Monde Consult m’a accompagnée avec clarté et sans stress. Tout a été expliqué simplement, et j’ai atteint mon objectif sans frais inutiles."
+      },
+      "mercy": {
+        "author": "Mercy B.",
+        "text": "Voyager au Ghana était souvent stressant en raison de mon emploi du temps et des démarches de visa. Autour du Monde Consult gère désormais tout avec efficacité et ponctualité. Depuis plus de deux ans, ils sont des partenaires fiables pour l’ensemble de mes démarches consulaires."
+      }
+    }
+  },
+  "contact": {
+    "title": "Entrez en contact avec notre équipe de consultants",
+    "description": "Des visas aux documents de voyage essentiels, nous sommes là pour simplifier chaque étape. Contactez-nous et laissez notre équipe gérer les démarches pendant que vous vous concentrez sur votre projet.",
+    "contactVia": "Vous pouvez également nous contacter via",
+    "form": {
+      "fullName": "Nom complet",
+      "fullNamePlaceholder": "Jean Dupont",
+      "email": "Adresse e-mail",
+      "emailPlaceholder": "jean{'@'}exemple.com",
+      "phone": "Numéro de téléphone",
+      "phonePlaceholder": "+33 1 23 45 67 89 / +233 24 123 4567",
+      "service": "Service souhaité",
+      "servicePlaceholder": "Sélectionner un service",
+      "message": "Comment pouvons-nous vous aider ?",
+      "messagePlaceholder": "Saisissez votre message",
+      "submit": "Envoyer le message",
+      "submitting": "Envoi en cours...",
+      "required": "*",
+      "services": {
+        "legal": "Assistance juridique",
+        "travel": "Conseil en voyage",
+        "admin": "Support administratif"
+      }
+    },
+    "success": "Merci de nous avoir contactés ! Nous vous répondrons dans les plus brefs délais.",
+    "error": "Échec de l’envoi du message. Veuillez réessayer plus tard."
+  },
+  "footer": {
+    "description": "Votre partenaire de confiance pour les voyages internationaux et les solutions juridiques.",
+    "quickLinks": "Liens rapides",
+    "followUs": "Suivez-nous",
+    "rights": "Tous droits réservés.",
+    "cta": "Nous contacter",
+    "copyright": "Copyright©"
+  }
+}

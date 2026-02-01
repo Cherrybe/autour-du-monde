@@ -46,16 +46,16 @@
 
       <!-- Tablet & Mobile navigation -->
       <button
-        @click="$emit('prev')"
         class="lg:hidden absolute left-2 md:-left-4 top-1/2 -translate-y-1/2 z-10 size-10 rounded-full bg-white/30 backdrop-blur shadow-md flex items-center justify-center text-base-black/70 hover:text-base-black transition"
         aria-label="Previous team member"
+        @click="$emit('prev')"
       >
         ‹
       </button>
 
       <button
-        @click="$emit('next')"
         class="lg:hidden absolute right-2 md:right-4 top-1/2 -translate-y-1/2 z-10 size-10 rounded-full bg-white/30 backdrop-blur shadow-md flex items-center justify-center text-base-black/70 hover:text-base-black transition"
+        @click="$emit('next')"
         aria-label="Next team member"
       >
         ›
@@ -76,7 +76,6 @@ defineProps<{
 }>();
 
 defineEmits<{
-  (e: "next"): void;
-  (e: "prev"): void;
+  (e: "next" | "prev"): void;
 }>();
 </script>

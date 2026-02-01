@@ -6,11 +6,13 @@
       <!-- Desktop nav -->
       <div class="hidden lg:flex items-center gap-5">
         <nav aria-label="Menu links" class="flex items-center gap-8">
-          <CommonNavLink to="/services">Services</CommonNavLink>
-          <CommonNavLink to="/about">About</CommonNavLink>
+          <CommonNavLink to="/services">{{ $t("nav.services") }}</CommonNavLink>
+          <CommonNavLink to="/about">{{ $t("nav.about") }}</CommonNavLink>
           <CommonNavLink to="/faq">FAQ</CommonNavLink>
-          <CommonNavLink to="#contact">Contact</CommonNavLink>
+          <CommonNavLink to="#contact">{{ $t("nav.contact") }}</CommonNavLink>
         </nav>
+
+        <CommonLanguageSwitcher />
 
         <CommonButton size="medium" variant="filled" color="secondary">
           Book Consultation
@@ -23,10 +25,7 @@
         aria-label="Toggle menu"
         @click="isMenuOpen = !isMenuOpen"
       >
-        <Icon
-          :name="isMenuOpen ? 'lucide:x' : 'lucide:menu'"
-          size="24"
-        />
+        <Icon :name="isMenuOpen ? 'lucide:x' : 'lucide:menu'" size="24" />
       </button>
     </div>
 
@@ -37,22 +36,43 @@
         :class="isMenuOpen ? 'max-h-[500px]' : 'max-h-0'"
       >
         <div class="mx-auto max-w-7xl px-6 py-6 flex flex-col gap-6">
-          <nav aria-label="Tablet and mobile menu links" class="flex flex-col divide-y divide-[#E7E7E7]">
-            <CommonNavLink to="/services" class="py-4 !text-lg" @click="isMenuOpen = false">
-              Services
+          <nav
+            aria-label="Tablet and mobile menu links"
+            class="flex flex-col divide-y divide-[#E7E7E7]"
+          >
+            <CommonNavLink
+              to="/services"
+              class="py-4 !text-lg"
+              @click="isMenuOpen = false"
+            >
+              {{ $t("nav.services") }}
             </CommonNavLink>
-            <CommonNavLink to="/about" class="py-4 !text-lg" @click="isMenuOpen = false">
-              About
+            <CommonNavLink
+              to="/about"
+              class="py-4 !text-lg"
+              @click="isMenuOpen = false"
+            >
+              {{ $t("nav.about") }}
             </CommonNavLink>
-            <CommonNavLink to="/faq" class="py-4 !text-lg" @click="isMenuOpen = false">
+            <CommonNavLink
+              to="/faq"
+              class="py-4 !text-lg"
+              @click="isMenuOpen = false"
+            >
               FAQ
             </CommonNavLink>
-            <CommonNavLink to="#contact" class="py-4 !text-lg" @click="isMenuOpen = false">
-              Contact
+            <CommonNavLink
+              to="#contact"
+              class="py-4 !text-lg"
+              @click="isMenuOpen = false"
+            >
+              {{ $t("nav.contact") }}
             </CommonNavLink>
           </nav>
 
-          <div class="flex justify-end">
+          <div class="flex items-center justify-between">
+            <CommonLanguageSwitcher />
+
             <CommonButton
               size="medium"
               variant="filled"

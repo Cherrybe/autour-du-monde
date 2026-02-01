@@ -12,6 +12,7 @@ const modules = [
   "@nuxtjs/robots",
   "@nuxtjs/sitemap",
   "shadcn-nuxt",
+  "@nuxtjs/i18n",
 ];
 
 export default defineNuxtConfig({
@@ -43,6 +44,20 @@ export default defineNuxtConfig({
   },
   eslint: {
     checker: true,
+  },
+  i18n: {
+    locales: [
+      { code: "en", iso: "en-US", name: "English", file: "en.json" },
+      { code: "fr", iso: "fr-FR", name: "Français", file: "fr.json" },
+    ],
+    defaultLocale: "en",
+    strategy: "prefix_except_default",
+    langDir: "locales",
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: "i18n_redirected",
+      redirectOn: "root",
+    },
   },
   devtools: { enabled: true },
 });

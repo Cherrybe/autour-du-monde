@@ -4,20 +4,18 @@
       <h2
         class="font-heading text-3xl md:text-5xl font-semibold text-base-black"
       >
-        Connect With Our Consulting Team
+        {{ $t("contact.title") }}
       </h2>
       <div
         class="mt-8 grid grid-cols-1 lg:grid-cols-12 seection gap-12 items-start"
       >
         <div class="lg:col-span-5">
           <p class="mt-4 text-secondary-600 leading-relaxed max-w-md">
-            From visas to essential travel documents, we’re here to make every
-            step easier. Get in touch and let our team handle the details while
-            you focus on your journey.
+            {{ $t("contact.description") }}
           </p>
 
           <p class="mt-8 font-medium text-base-black">
-            You can also contact us via
+            {{ $t("contact.contactVia") }}
           </p>
 
           <!-- Contact details -->
@@ -47,7 +45,7 @@
                 <IconsLocation />
               </span>
               <span>
-                4 Rue Ferdinand Laulanie,<br >
+                4 Rue Ferdinand Laulanie,<br />
                 31100, Toulouse
               </span>
             </li>
@@ -72,7 +70,7 @@
               v-if="submitStatus === 'success'"
               class="mb-6 p-4 rounded bg-green-50 border border-green-200 text-green-700"
             >
-              Thank you for contacting us! We'll get back to you shortly.
+              {{ $t("contact.success") }}
             </div>
 
             <!-- Error message -->
@@ -86,49 +84,55 @@
             <form class="grid grid-cols-1 gap-6" @submit.prevent="handleSubmit">
               <!-- Full name -->
               <div>
-                <label for="fullName" class="form-label">Full Name *</label>
+                <label for="fullName" class="form-label"
+                  >{{ $t("contact.form.fullName") }} *</label
+                >
                 <input
                   id="fullName"
                   v-model="formData.fullName"
                   type="text"
-                  placeholder="John Doe"
+                  :placeholder="$t('contact.form.fullNamePlaceholder')"
                   class="form-input"
                   required
                   :disabled="isSubmitting"
-                >
+                />
               </div>
 
               <!-- Email -->
               <div>
-                <label for="email" class="form-label">Email Address *</label>
+                <label for="email" class="form-label"
+                  >{{ $t("contact.form.email") }} *</label
+                >
                 <input
                   id="email"
                   v-model="formData.email"
                   type="email"
-                  placeholder="john@example.com"
+                  :placeholder="$t('contact.form.emailPlaceholder')"
                   class="form-input"
                   required
                   :disabled="isSubmitting"
-                >
+                />
               </div>
 
               <!-- Phone -->
               <div>
-                <label for="phone" class="form-label">Phone Number</label>
+                <label for="phone" class="form-label">{{
+                  $t("contact.form.phone")
+                }}</label>
                 <input
                   id="phone"
                   v-model="formData.phone"
                   type="tel"
-                  placeholder="+33 1 23 45 67 89 / +233 24 123 4567"
+                  :placeholder="$t('contact.form.phonePlaceholder')"
                   class="form-input"
                   :disabled="isSubmitting"
-                >
+                />
               </div>
 
               <!-- Service -->
               <div>
                 <label for="service" class="form-label"
-                  >Service Interested In *</label
+                  >{{ $t("contact.form.service") }} *</label
                 >
                 <select
                   id="service"
@@ -137,23 +141,25 @@
                   required
                   :disabled="isSubmitting"
                 >
-                  <option value="">Select a service</option>
-                  <option>Legal Assistance</option>
-                  <option>Travel Consultancy</option>
-                  <option>Admin Support</option>
+                  <option value="">
+                    {{ $t("contact.form.servicePlaceholder") }}
+                  </option>
+                  <option>{{ $t("contact.form.services.legal") }}</option>
+                  <option>{{ $t("contact.form.services.travel") }}</option>
+                  <option>{{ $t("contact.form.services.admin") }}</option>
                 </select>
               </div>
 
               <!-- Message -->
               <div>
                 <label for="message" class="form-label"
-                  >How can we help you? *</label
+                  >{{ $t("contact.form.message") }} *</label
                 >
                 <textarea
                   id="message"
                   v-model="formData.message"
                   rows="4"
-                  placeholder="Enter your message"
+                  :placeholder="$t('contact.form.messagePlaceholder')"
                   class="form-input resize-none"
                   required
                   :disabled="isSubmitting"
@@ -169,7 +175,11 @@
                 class="w-full mt-2"
                 :disabled="isSubmitting"
               >
-                {{ isSubmitting ? 'Sending...' : 'Send Message' }}
+                {{
+                  isSubmitting
+                    ? $t("contact.form.submitting")
+                    : $t("contact.form.submit")
+                }}
               </CommonButton>
             </form>
           </div>
@@ -181,44 +191,46 @@
 
 <script setup lang="ts">
 const formData = reactive({
-  fullName: '',
-  email: '',
-  phone: '',
-  service: '',
-  message: '',
+  fullName: "",
+  email: "",
+  phone: "",
+  service: "",
+  message: "",
 });
 
 const isSubmitting = ref(false);
-const submitStatus = ref<'idle' | 'success' | 'error'>('idle');
-const errorMessage = ref('');
+const submitStatus = ref<"idle" | "success" | "error">("idle");
+const errorMessage = ref("");
 
 const handleSubmit = async () => {
   isSubmitting.value = true;
-  submitStatus.value = 'idle';
-  errorMessage.value = '';
+  submitStatus.value = "idle";
+  errorMessage.value = "";
 
   try {
-    const response = await $fetch('/api/contact', {
-      method: 'POST',
+    await $fetch("/api/contact", {
+      method: "POST",
       body: formData,
     });
 
-    submitStatus.value = 'success';
-    
+    submitStatus.value = "success";
+
     // Reset form
-    formData.fullName = '';
-    formData.email = '';
-    formData.phone = '';
-    formData.service = '';
-    formData.message = '';
+    formData.fullName = "";
+    formData.email = "";
+    formData.phone = "";
+    formData.service = "";
+    formData.message = "";
 
     // Hide success message after 5 seconds
     setTimeout(() => {
-      submitStatus.value = 'idle';
+      submitStatus.value = "idle";
     }, 5000);
-  } catch (error: any) {
-    submitStatus.value = 'error';
-    errorMessage.value = error.data?.message || 'Failed to send message. Please try again later.';
+  } catch (error: unknown) {
+    submitStatus.value = "error";
+    const err = error as { data?: { message?: string } };
+    errorMessage.value =
+      err.data?.message || "Failed to send message. Please try again later.";
   } finally {
     isSubmitting.value = false;
   }

@@ -1,0 +1,111 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À Propos",
+    "services": "Services",
+    "team": "Équipe",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Votre Passerelle vers les Voyages Internationaux et Solutions Juridiques",
+    "subtitle": "Navigation des visas, immigration et logistique de voyage avec une précision experte.",
+    "cta": "Commencez Aujourd'hui"
+  },
+  "about": {
+    "title": "Qui Sommes-Nous",
+    "description": "Autour du Monde Consult est votre partenaire de confiance pour les solutions juridiques, administratives et de voyage transfrontalières. Avec une expertise couvrant le droit de l'immigration, le traitement des visas et la gestion des documents, nous simplifions les parcours complexes - que vous prévoyiez d'étudier à l'étranger, de déménager ou d'explorer de nouvelles opportunités.",
+    "vision": "Notre Vision",
+    "visionText": "Être le cabinet de conseil leader permettant une mobilité mondiale fluide et une conformité juridique pour les particuliers et les entreprises du monde entier."
+  },
+  "services": {
+    "title": "Nos Services",
+    "subtitle": "Soutien complet pour votre voyage international",
+    "legal": {
+      "title": "Assistance Juridique",
+      "description": "Conseils juridiques experts pour l'immigration, les visas et la conformité internationale."
+    },
+    "travel": {
+      "title": "Conseil en Voyage",
+      "description": "Planification de voyage complète et support documentaire pour particuliers et groupes."
+    },
+    "admin": {
+      "title": "Support Administratif",
+      "description": "Gestion efficace des documents, permis et processus administratifs."
+    },
+    "learnMore": "En Savoir Plus"
+  },
+  "process": {
+    "title": "Comment Nous Travaillons",
+    "subtitle": "Un processus simple et transparent du début à la fin",
+    "consultation": {
+      "title": "Consultation",
+      "description": "Nous discutons de vos besoins et fournissons des conseils personnalisés."
+    },
+    "documentation": {
+      "title": "Documentation",
+      "description": "Nous gérons tous les documents avec précision et soin."
+    },
+    "submission": {
+      "title": "Soumission",
+      "description": "Nous soumettons les demandes aux autorités compétentes en votre nom."
+    },
+    "followUp": {
+      "title": "Suivi",
+      "description": "Nous suivons les progrès et vous tenons informé à chaque étape."
+    }
+  },
+  "team": {
+    "title": "Nos Experts, Vos Partenaires",
+    "members": {
+      "anthony": {
+        "name": "Anthony Osei-Agyei",
+        "position": "Fondateur & PDG",
+        "bio": "Anthony apporte des années d'expérience en conseil juridique et transfrontalier..."
+      },
+      "mawuena": {
+        "name": "Mawuena Osei-Agyei",
+        "position": "Associé & Expert Juridique",
+        "bio": "Mawuena supervise les opérations quotidiennes..."
+      },
+      "timothy": {
+        "name": "Timothy Yeboah",
+        "position": "Consultant & Conseiller Technique",
+        "bio": "Timothy fournit des perspectives techniques..."
+      }
+    }
+  },
+  "testimonials": {
+    "title": "Ce Que Disent Nos Clients",
+    "subtitle": "Expériences réelles de personnes que nous avons aidées"
+  },
+  "contact": {
+    "title": "Connectez-vous avec Notre Équipe de Conseil",
+    "description": "Des visas aux documents de voyage essentiels, nous sommes là pour faciliter chaque étape. Contactez-nous et laissez notre équipe gérer les détails pendant que vous vous concentrez sur votre voyage.",
+    "contactVia": "Vous pouvez également nous contacter via",
+    "form": {
+      "fullName": "Nom Complet",
+      "email": "Adresse Email",
+      "phone": "Numéro de Téléphone",
+      "service": "Service Intéressé",
+      "servicePlaceholder": "Sélectionnez un service",
+      "message": "Comment pouvons-nous vous aider ?",
+      "messagePlaceholder": "Entrez votre message",
+      "submit": "Envoyer le Message",
+      "submitting": "Envoi...",
+      "required": "*",
+      "services": {
+        "legal": "Assistance Juridique",
+        "travel": "Conseil en Voyage",
+        "admin": "Support Administratif"
+      }
+    },
+    "success": "Merci de nous avoir contactés ! Nous vous répondrons sous peu.",
+    "error": "Échec de l'envoi du message. Veuillez réessayer plus tard."
+  },
+  "footer": {
+    "description": "Votre partenaire de confiance pour les voyages internationaux et les solutions juridiques.",
+    "quickLinks": "Liens Rapides",
+    "followUs": "Suivez-Nous",
+    "rights": "Tous droits réservés."
+  }
+}

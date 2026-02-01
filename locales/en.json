@@ -1,0 +1,111 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "team": "Team",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Your Gateway to Global Travel & Legal Solutions",
+    "subtitle": "Navigating visas, immigration, and travel logistics with expert precision.",
+    "cta": "Get Started Today"
+  },
+  "about": {
+    "title": "Who We Are",
+    "description": "Autour du Monde Consult is your trusted partner for cross-border legal, administrative, and travel solutions. With expertise spanning immigration law, visa processing, and document management, we simplify complex journeys—whether you're planning to study abroad, relocate, or explore new opportunities.",
+    "vision": "Our Vision",
+    "visionText": "To be the leading consultancy firm enabling seamless global mobility and legal compliance for individuals and businesses worldwide."
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Comprehensive support for your international journey",
+    "legal": {
+      "title": "Legal Assistance",
+      "description": "Expert legal guidance for immigration, visas, and international compliance."
+    },
+    "travel": {
+      "title": "Travel Consultancy",
+      "description": "Complete travel planning and documentation support for individuals and groups."
+    },
+    "admin": {
+      "title": "Admin Support",
+      "description": "Efficient handling of paperwork, permits, and administrative processes."
+    },
+    "learnMore": "Learn More"
+  },
+  "process": {
+    "title": "How We Work",
+    "subtitle": "A simple, transparent process from start to finish",
+    "consultation": {
+      "title": "Consultation",
+      "description": "We discuss your needs and provide tailored advice."
+    },
+    "documentation": {
+      "title": "Documentation",
+      "description": "We handle all paperwork with precision and care."
+    },
+    "submission": {
+      "title": "Submission",
+      "description": "We submit applications to relevant authorities on your behalf."
+    },
+    "followUp": {
+      "title": "Follow-up",
+      "description": "We track progress and keep you informed every step."
+    }
+  },
+  "team": {
+    "title": "Our Experts, Your Partners",
+    "members": {
+      "anthony": {
+        "name": "Anthony Osei-Agyei",
+        "position": "Founder & CEO",
+        "bio": "Anthony brings years of legal and cross-border consulting experience..."
+      },
+      "mawuena": {
+        "name": "Mawuena Osei-Agyei",
+        "position": "Associate & Legal Expert",
+        "bio": "Mawuena oversees daily operations..."
+      },
+      "timothy": {
+        "name": "Timothy Yeboah",
+        "position": "Consultant & Technical Advisor",
+        "bio": "Timothy provides technical insight..."
+      }
+    }
+  },
+  "testimonials": {
+    "title": "What Our Clients Say",
+    "subtitle": "Real experiences from people we've helped"
+  },
+  "contact": {
+    "title": "Connect With Our Consulting Team",
+    "description": "From visas to essential travel documents, we're here to make every step easier. Get in touch and let our team handle the details while you focus on your journey.",
+    "contactVia": "You can also contact us via",
+    "form": {
+      "fullName": "Full Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "service": "Service Interested In",
+      "servicePlaceholder": "Select a service",
+      "message": "How can we help you?",
+      "messagePlaceholder": "Enter your message",
+      "submit": "Send Message",
+      "submitting": "Sending...",
+      "required": "*",
+      "services": {
+        "legal": "Legal Assistance",
+        "travel": "Travel Consultancy",
+        "admin": "Admin Support"
+      }
+    },
+    "success": "Thank you for contacting us! We'll get back to you shortly.",
+    "error": "Failed to send message. Please try again later."
+  },
+  "footer": {
+    "description": "Your trusted partner for global travel and legal solutions.",
+    "quickLinks": "Quick Links",
+    "followUs": "Follow Us",
+    "rights": "All rights reserved."
+  }
+}
