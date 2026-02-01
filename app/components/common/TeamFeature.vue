@@ -59,8 +59,8 @@
 
       <button
         class="lg:hidden absolute right-2 md:right-4 top-1/2 -translate-y-1/2 z-10 size-10 rounded-full bg-white/30 backdrop-blur shadow-md flex items-center justify-center text-base-black/70 hover:text-base-black transition"
-        @click="$emit('next')"
         aria-label="Next team member"
+        @click="$emit('next')"
       >
         ›
       </button>
