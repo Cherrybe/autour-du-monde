@@ -2,14 +2,20 @@
   <section id="about" class="bg-[#FEFEFE] py-20">
     <div class="mx-auto max-w-7xl px-6 grid grid-cols-1 lg:grid-cols-12 gap-12">
       <div class="hidden lg:block lg:col-span-5">
-        <NuxtImg
+        <img
+          src="assets/images/home-about.jpg"
+          alt="home-about session"
+          loading="lazy"
+          class="rounded w-full max-w-[520px] h-auto"
+        >
+        <!-- <NuxtImg
           src="/images/home-about.jpg"
           alt="home-about session"
           width="520"
           height="564"
           class="rounded w-full max-w-[520px] h-auto"
           loading="lazy"
-        />
+        /> -->
       </div>
 
       <!-- CONTENT -->

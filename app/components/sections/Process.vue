@@ -12,14 +12,21 @@
         </h2>
 
         <div class="mt-10 overflow-hidden rounded">
-          <NuxtImg
-            src="/images/our-process.jpg"
+          <img
+            src="assets/images/our-process.jpg"
+            alt="Consultation process"
+            loading="lazy"
+            class="w-full object-cover grayscale"
+            >
+            <!-- src="../../assets/images/our-process.jpg" -->
+          <!-- <NuxtImg
+            src="~/app/assets/images/our-process.jpg"
             alt="Consultation process"
             width="556"
             height="368"
             class="rounded w-full object-cover grayscale"
             loading="lazy"
-          />
+          /> -->
         </div>
       </div>
 
@@ -52,3 +59,8 @@
     </div>
   </section>
 </template>
+
+<!-- <script setup lang="ts">
+// import img from '../../assets/our-process.jpg';
+import img from '~/assets/our-process.jpg';
+</script> -->

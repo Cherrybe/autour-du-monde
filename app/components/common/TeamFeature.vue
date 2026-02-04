@@ -6,12 +6,18 @@
     <div
       class="relative h-[20rem] sm:h-[22rem] md:h-[26rem] lg:h-[34rem] rounded-xl overflow-hidden"
     >
-      <NuxtImg
+      <img
+        :src="member.image"
+        :alt="member.name"
+        loading="lazy"
+        class="absolute inset-0 h-full w-full object-cover object-top"
+      >
+      <!-- <NuxtImg
         :src="member.image"
         :alt="member.name"
         format="webp"
         class="absolute inset-0 h-full w-full object-cover object-top"
-      />
+      /> -->
     </div>
 
     <!-- Content -->

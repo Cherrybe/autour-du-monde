@@ -5,12 +5,18 @@
       <div
         class="grid grid-cols-1 md:grid-cols-2 justify-between items-center gap-8 mb-8"
       >
-        <NuxtImg
+        <img
+          src="assets/images/dark_logo.png"
+          alt="Autour du Monde Logo"
+          loading="lazy"
+          class="size-24"
+        />
+        <!-- <NuxtImg
           src="/images/dark_logo.png"
           alt="Autour du Monde Logo"
           class="size-24"
           priority
-        />
+        /> -->
 
         <!-- CTA -->
         <div class="flex md:justify-end">

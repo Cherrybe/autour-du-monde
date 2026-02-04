@@ -46,14 +46,20 @@
         ref="imageRef"
         class="relative flex justify-center lg:justify-end md:hidden lg:flex"
       >
-        <NuxtImg
+        <img
+          src="assets/images/consultation.jpg"
+          alt="Consultation process"
+          loading="lazy"
+          class="rounded-lg shadow-2xl w-full max-w-[520px] h-[480px] object-cover"
+        />
+        <!-- <NuxtImg
           src="/images/consultation.jpg"
           alt="Consultation session"
           width="520"
           height="480"
           class="rounded-lg shadow-2xl w-full max-w-[520px] h-auto"
           loading="lazy"
-        />
+        /> -->
       </div>
     </div>
 
